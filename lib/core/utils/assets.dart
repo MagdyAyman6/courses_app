@@ -1,0 +1,7 @@
+abstract class AssetsData {
+  static const splash = "assets/images/splash_logo.png";
+  static const splashImage = "assets/images/splash_image.png";
+  static const onBoarding1 = 'assets/images/on_boarding_1_logo.png';
+  static const onBoarding2 = 'assets/images/on_boarding_2_logo.png';
+  static const onBoarding3 = 'assets/images/on_boarding_3_logo.png';
+}
