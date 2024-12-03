@@ -1,8 +1,7 @@
-import 'package:course_app/features/splash/presentation/widgets/skip_button.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../core/utils/app_color.dart';
 import '../../../../core/utils/styles.dart';
-import 'next_button.dart';
 
 class OnboardingContent extends StatelessWidget {
   final String title;
@@ -19,42 +18,27 @@ class OnboardingContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: double.infinity,
-      height: 200,
+      width: 345.w,
+      height: 170.h,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(24),
         color: AppColor.kOnboardingContainerColor,
       ),
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              title,
-              style: Styles.textStyle32,
-            ),
-            Text(
-              subTitle,
-              style: Styles.textStyle24,
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 10),
-            Row(
-              children: [
-                Expanded(
-                  child: NextButton(onTap: onTap),
-                ),
-                const SizedBox(width: 9),
-                const Expanded(
-                  child: SkipButton(),
-                ),
-              ],
-            ),
-          ],
-        ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            title,
+            style: Styles.textStyle20,
+          ),
+          SizedBox(height: 10.h),
+          Text(
+            subTitle,
+            style: Styles.textStyle16.copyWith(color: const Color(0xffFFC100)),
+            maxLines: 5,
+            textAlign: TextAlign.center,
+          ),
+        ],
       ),
     );
   }

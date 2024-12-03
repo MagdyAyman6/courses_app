@@ -20,17 +20,22 @@ abstract class Styles {
     fontSize: 16,
     color: AppColor.kGrayTextColor,
   );
+  static const textStyle17 = TextStyle(
+    fontWeight: FontWeight.w400,
+    fontSize: 17,
+    color: AppColor.kWhiteColor,
+  );
 
   static const textStyle18 = TextStyle(
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w400,
     fontSize: 18,
     color: AppColor.kWhiteColor,
   );
 
   static const textStyle20 = TextStyle(
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeight.w300,
     fontSize: 20,
-    color: AppColor.kPrimaryColor,
+    color: AppColor.kWhiteColor,
   );
 
   static const textStyle24 = TextStyle(
