@@ -1,3 +1,4 @@
+import 'package:course_app/features/home/presentation/views/widgets/my_home_page_view_body.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import '../../features/splash/presentation/on_boarding_view.dart';
@@ -43,12 +44,12 @@ abstract class AppRouter {
       //     return const VerificationCodeView();
       //   },
       // ),
-      // GoRoute(
-      //   path: kMyHomeView,
-      //   builder: (BuildContext context, GoRouterState state) {
-      //     return const MyHomeView();
-      //   },
-      // ),
+      GoRoute(
+        path: kMyHomeView,
+        builder: (BuildContext context, GoRouterState state) {
+          return const MyHomePageViewBody();
+        },
+      ),
     ],
   );
 }

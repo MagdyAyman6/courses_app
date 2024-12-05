@@ -11,7 +11,7 @@ class SkipButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        GoRouter.of(context).push(AppRouter.kSignInSignUpView);
+        GoRouter.of(context).push(AppRouter.kMyHomeView);
       },
       child: Padding(
         padding:

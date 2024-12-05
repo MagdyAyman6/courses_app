@@ -1,3 +1,4 @@
+import 'package:course_app/features/home/presentation/views/widgets/my_home_page_view_body.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -5,6 +6,6 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const MyHomePageViewBody();
   }
 }
