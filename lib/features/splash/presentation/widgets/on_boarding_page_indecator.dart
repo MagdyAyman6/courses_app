@@ -14,10 +14,10 @@ class OnboardingPageIndicator extends StatelessWidget {
     return SmoothPageIndicator(
       controller: controller,
       count: 3,
-      effect: ExpandingDotsEffect(
+      effect: JumpingDotEffect(
         dotHeight: 10.h,
         dotWidth: 10.w,
-        dotColor: Color(0xff75c8b780),
+        dotColor: const Color(0xff75C8B7),
         activeDotColor: AppColor.kOnboardingIndicatorColor,
       ),
     );

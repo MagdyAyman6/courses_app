@@ -19,4 +19,6 @@ abstract class AppColor {
   static const kName2Color = Color(0xff8A8A8A);
   static const kRateNumber = Color(0xff6F6F6F);
   static const kRateIcon = Color(0xffFCD53F);
+  static const kIconsColor = Color(0xff75C8B7);
+  static const kRateContainerColor = Color(0xff75C8B7);
 }
