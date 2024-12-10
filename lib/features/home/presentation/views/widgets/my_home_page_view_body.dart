@@ -1,17 +1,31 @@
-import 'package:course_app/features/home/presentation/views/widgets/slider_container.dart';
+import 'package:course_app/features/home/presentation/views/widgets/slider_container/slider_container.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePageViewBody extends StatelessWidget {
-  const MyHomePageViewBody({super.key});
+  MyHomePageViewBody({super.key});
+
+  final PageController controller = PageController();
+  final int _currentPage = 0;
+
+  void nextPage() {
+    if (_currentPage < 5) {
+      controller.nextPage(
+        duration: const Duration(milliseconds: 100),
+        curve: Curves.easeInCirc,
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: Colors.white,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          SliderContainer(),
+          SliderContainer(
+            controller: controller,
+          ),
         ],
       ),
     );
