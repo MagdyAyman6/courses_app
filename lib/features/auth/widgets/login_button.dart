@@ -5,13 +5,13 @@ import 'package:go_router/go_router.dart';
 import '../../../core/utils/app_router.dart';
 
 class LoginButton extends StatelessWidget {
-  const LoginButton({Key? key}) : super(key: key);
+  const LoginButton({super.key});
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
-      child:   ElevatedButton(
+      child: ElevatedButton(
         onPressed: () {
           GoRouter.of(context).push(AppRouter.kMyHomeView);
         },
@@ -30,6 +30,6 @@ class LoginButton extends StatelessWidget {
   }
 }
 
-extension on GestureDetector {
-  style({required EdgeInsets padding, required RoundedRectangleBorder shape}) {}
-}
+// extension on GestureDetector {
+//   style({required EdgeInsets padding, required RoundedRectangleBorder shape}) {}
+// }

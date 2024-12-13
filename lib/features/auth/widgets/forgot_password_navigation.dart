@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class ForgotPasswordNavigation extends StatelessWidget {
-  const ForgotPasswordNavigation({Key? key}) : super(key: key);
+  const ForgotPasswordNavigation({super.key});
 
   @override
   Widget build(BuildContext context) {

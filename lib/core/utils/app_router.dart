@@ -15,7 +15,8 @@ abstract class AppRouter {
   static const kForgetPassView = '/ForgetPassView';
   static const kVerificationCodeView = '/VerificationCodeView';
   static const kMyHomeView = '/MyHomeView';
-  static const kMylogin = '/login';
+  static const kMyLogin = '/login';
+  static const kSuccessScreen = '/SuccessScreen';
 
   static final GoRouter router = GoRouter(
     routes: <RouteBase>[
@@ -31,18 +32,18 @@ abstract class AppRouter {
           return const OnboardingView();
         },
       ),
-      // GoRoute(
-      //   path: kSignInSignUpView,
-      //   builder: (BuildContext context, GoRouterState state) {
-      //     return const SignInSignUpView();
-      //   },
-      // ),
-      // GoRoute(
-      //   path: kForgetPassView,
-      //   builder: (BuildContext context, GoRouterState state) {
-      //     return const ForgetPasswordView();
-      //   },
-      // ),
+      GoRoute(
+        path: kSignInSignUpView,
+        builder: (BuildContext context, GoRouterState state) {
+          return const SignupScreen();
+        },
+      ),
+      GoRoute(
+        path: kForgetPassView,
+        builder: (BuildContext context, GoRouterState state) {
+          return const ForgotPasswordScreen();
+        },
+      ),
       // GoRoute(
       //   path: kVerificationCodeView,
       //   builder: (BuildContext context, GoRouterState state) {
@@ -56,21 +57,27 @@ abstract class AppRouter {
         },
       ),
       GoRoute(
+        path: kSuccessScreen,
+        builder: (BuildContext context, GoRouterState state) {
+          return const SuccessScreen();
+        },
+      ),
+      GoRoute(
         path: '/signup',
-        builder: (context, state) => SignupScreen(),
+        builder: (context, state) => const SignupScreen(),
       ),
       GoRoute(
         path: '/login',
-        builder: (context, state) => LoginScreen(),
+        builder: (context, state) => const LoginScreen(),
       ),
-      GoRoute(
-        path: '/success',
-        builder: (context, state) => SuccessScreen(),
-      ),
-      GoRoute(
-        path: '/forgot-password',
-        builder: (context, state) => ForgotPasswordScreen(),
-      ),
+      // GoRoute(
+      //   path: '/success',
+      //   builder: (context, state) => const SuccessScreen(),
+      // ),
+      // GoRoute(
+      //   path: '/forgot-password',
+      //   builder: (context, state) => const ForgotPasswordScreen(),
+      // ),
     ],
   );
 }

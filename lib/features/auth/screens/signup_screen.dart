@@ -1,6 +1,10 @@
+import 'package:course_app/core/utils/app_router.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class SignupScreen extends StatefulWidget {
+  const SignupScreen({super.key});
+
   @override
   _SignupScreenState createState() => _SignupScreenState();
 }
@@ -12,27 +16,25 @@ class _SignupScreenState extends State<SignupScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-
-
-      ),
+      appBar: AppBar(),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Center(
-              child: Image.asset('assets/images/logo.png', height: 100), // اللوجو
+              child:
+                  Image.asset('assets/images/logo.png', height: 100), // اللوجو
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: "user name",
                 prefixIcon: Icon(Icons.person),
               ),
             ),
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: "Email",
                 prefixIcon: Icon(Icons.email),
               ),
@@ -41,9 +43,11 @@ class _SignupScreenState extends State<SignupScreen> {
               obscureText: isPasswordHidden,
               decoration: InputDecoration(
                 labelText: "password",
-                prefixIcon: Icon(Icons.lock),
+                prefixIcon: const Icon(Icons.lock),
                 suffixIcon: IconButton(
-                  icon: Icon(isPasswordHidden ? Icons.visibility_off : Icons.visibility),
+                  icon: Icon(isPasswordHidden
+                      ? Icons.visibility_off
+                      : Icons.visibility),
                   onPressed: () {
                     setState(() {
                       isPasswordHidden = !isPasswordHidden;
@@ -56,9 +60,11 @@ class _SignupScreenState extends State<SignupScreen> {
               obscureText: isConfirmPasswordHidden,
               decoration: InputDecoration(
                 labelText: "confirm password",
-                prefixIcon: Icon(Icons.lock),
+                prefixIcon: const Icon(Icons.lock),
                 suffixIcon: IconButton(
-                  icon: Icon(isConfirmPasswordHidden ? Icons.visibility_off : Icons.visibility),
+                  icon: Icon(isConfirmPasswordHidden
+                      ? Icons.visibility_off
+                      : Icons.visibility),
                   onPressed: () {
                     setState(() {
                       isConfirmPasswordHidden = !isConfirmPasswordHidden;
@@ -67,22 +73,24 @@ class _SignupScreenState extends State<SignupScreen> {
                 ),
               ),
             ),
-
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 // تنفيذ منطق إنشاء الحساب
-                Navigator.pushReplacementNamed(context, '/success');
+                // Navigator.pushReplacementNamed(context, '/success');
+                GoRouter.of(context).push(AppRouter.kSuccessScreen);
               },
-              style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.blue)),
-              child: Center(child: Text("sign up")),
+              style: ButtonStyle(
+                  backgroundColor: WidgetStateProperty.all(Colors.blue)),
+              child: const Center(child: Text("sign up")),
             ),
             Center(
               child: TextButton(
                 onPressed: () {
-                  Navigator.pushReplacementNamed(context, '/login');
+                  // Navigator.pushReplacementNamed(context, '/login');
+                  GoRouter.of(context).push(AppRouter.kMyLogin);
                 },
-                child: Center(child: Text("Dont Have Account ؟ login")),
+                child: const Center(child: Text("Don't Have Account ؟ login")),
               ),
             ),
           ],

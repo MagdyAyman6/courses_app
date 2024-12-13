@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
 class SuccessScreen extends StatelessWidget {
+  const SuccessScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-
         backgroundColor: Colors.blue,
       ),
       body: Center(
         child: Container(
-
           width: 300,
           height: 200,
           decoration: BoxDecoration(
@@ -24,10 +24,13 @@ class SuccessScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset('assets/images/logo.png', height: 50), // اللوجو
-              SizedBox(height: 20),
-              Text(
-                "Succsesfuly",
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.blue),
+              const SizedBox(height: 20),
+              const Text(
+                "Successfully",
+                style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blue),
               ),
             ],
           ),
