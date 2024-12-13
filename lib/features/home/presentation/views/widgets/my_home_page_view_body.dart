@@ -1,3 +1,4 @@
+import 'package:course_app/features/home/presentation/views/widgets/listview_reviews/list_view_reviews.dart';
 import 'package:course_app/features/home/presentation/views/widgets/slider_container/slider_container.dart';
 import 'package:flutter/material.dart';
 
@@ -20,13 +21,21 @@ class MyHomePageViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          SliderContainer(
-            controller: controller,
-          ),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Align(
+              alignment: Alignment.bottomLeft,
+              child: SliderContainer(
+                controller: controller,
+              ),
+            ),
+            ListViewReviews(
+              controller: controller,
+            ),
+          ],
+        ),
       ),
     );
   }
