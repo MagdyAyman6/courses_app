@@ -36,7 +36,9 @@ class SliderContainer extends StatelessWidget {
             ),
             const LocationButton(),
             const RateBox(),
-            SliderContainerIndicator(controller: controller),
+            Align(
+                alignment: Alignment.bottomLeft,
+                child: SliderContainerIndicator(controller: controller)),
           ],
         ),
       ),

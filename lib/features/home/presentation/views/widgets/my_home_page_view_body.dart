@@ -2,6 +2,8 @@ import 'package:course_app/features/home/presentation/views/widgets/listview_rev
 import 'package:course_app/features/home/presentation/views/widgets/slider_container/slider_container.dart';
 import 'package:flutter/material.dart';
 
+import 'categories_overlay/category.dart';
+
 class MyHomePageViewBody extends StatelessWidget {
   MyHomePageViewBody({super.key});
 
@@ -25,15 +27,13 @@ class MyHomePageViewBody extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Align(
-              alignment: Alignment.bottomLeft,
-              child: SliderContainer(
-                controller: controller,
-              ),
+            SliderContainer(
+              controller: controller,
             ),
             ListViewReviews(
               controller: controller,
             ),
+            const Category(),
           ],
         ),
       ),

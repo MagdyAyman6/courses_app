@@ -6,4 +6,5 @@ abstract class AssetsData {
   static const onBoarding3 = 'assets/images/on_boarding_3_logo.png';
   static const homeSliderCover = 'assets/images/home_slider_cover.png';
   static const reviewsHomeImg = 'assets/images/reviews_img.png';
+  static const categoryHomeImg = 'assets/images/category_home_img.png';
 }

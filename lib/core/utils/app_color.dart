@@ -21,4 +21,5 @@ abstract class AppColor {
   static const kRateIcon = Color(0xffFCD53F);
   static const kIconsColor = Color(0xff75C8B7);
   static const kRateContainerColor = Color(0xff75C8B7);
+  static const kCategoryHomeColor = Color(0xff383838);
 }
