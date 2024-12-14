@@ -7,7 +7,6 @@ import 'next_button.dart';
 import 'on_boarding_page_indecator.dart';
 import 'on_boarding_page_view.dart';
 
-
 class OnboardingViewBody extends StatefulWidget {
   const OnboardingViewBody({super.key});
 
@@ -48,14 +47,18 @@ class _OnboardingViewBodyState extends State<OnboardingViewBody> {
             },
           ),
         ),
-        SizedBox(height: 100.h,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            OnboardingPageIndicator(controller: controller),
-            NextButton(onTap: nextPage,),
-          ],
-        ),)
+        SizedBox(
+          height: 100.h,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              OnboardingPageIndicator(controller: controller),
+              NextButton(
+                onTap: nextPage,
+              ),
+            ],
+          ),
+        )
       ],
     );
   }

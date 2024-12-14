@@ -1,23 +1,21 @@
+import 'package:course_app/features/auth/presentation/forget_pass_view.dart';
+import 'package:course_app/features/auth/presentation/sign_up_view.dart';
+import 'package:course_app/features/auth/presentation/verify_code_view.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../features/auth/views/forgot_password_screen.dart';
-import '../../features/auth/views/login_screen.dart';
-import '../../features/auth/views/signup_screen.dart';
-import '../../features/auth/views/success_screen.dart';
+import '../../features/auth/presentation/log_in_view.dart';
 import '../../features/home/presentation/views/widgets/my_home_page_view_body.dart';
 import '../../features/splash/presentation/on_boarding_view.dart';
 import '../../features/splash/presentation/splash_view.dart';
 
 abstract class AppRouter {
-
   static const kOnboardingView = '/OnboardingView';
-  static const kSignInSignUpView = '/SignInSignUpView';
+  static const kSignUpView = '/SignUpView';
   static const kForgetPassView = '/ForgetPassView';
-  static const kVerificationCodeView = '/VerificationCodeView';
+  static const kVerifyCodeView = '/VerifyCodeView';
   static const kMyHomeView = '/MyHomeView';
   static const kMyLogin = '/login';
-  static const kSuccessScreen = '/SuccessScreen';
 
   static final GoRouter router = GoRouter(
     routes: <RouteBase>[
@@ -34,23 +32,23 @@ abstract class AppRouter {
         },
       ),
       GoRoute(
-        path: kSignInSignUpView,
+        path: kSignUpView,
         builder: (BuildContext context, GoRouterState state) {
-          return const SignupScreen();
+          return const SignUpView();
         },
       ),
       GoRoute(
         path: kForgetPassView,
         builder: (BuildContext context, GoRouterState state) {
-          return const ForgotPasswordScreen();
+          return const ForgetPassView();
         },
       ),
-      // GoRoute(
-      //   path: kVerificationCodeView,
-      //   builder: (BuildContext context, GoRouterState state) {
-      //     return const VerificationCodeView();
-      //   },
-      // ),
+      GoRoute(
+        path: kVerifyCodeView,
+        builder: (BuildContext context, GoRouterState state) {
+          return const VerifyCodeView();
+        },
+      ),
       GoRoute(
         path: kMyHomeView,
         builder: (BuildContext context, GoRouterState state) {
@@ -58,27 +56,9 @@ abstract class AppRouter {
         },
       ),
       GoRoute(
-        path: kSuccessScreen,
-        builder: (BuildContext context, GoRouterState state) {
-          return const SuccessScreen();
-        },
-      ),
-      // GoRoute(
-      //   path: '/signup',
-      //   builder: (context, state) => const SignupScreen(),
-      // ),
-      GoRoute(
         path: '/login',
-        builder: (context, state) => const LoginScreen(),
+        builder: (context, state) => const LogInView(),
       ),
-      // GoRoute(
-      //   path: '/success',
-      //   builder: (context, state) => const SuccessScreen(),
-      // ),
-      // GoRoute(
-      //   path: '/forgot-password',
-      //   builder: (context, state) => const ForgotPasswordScreen(),
-      // ),
     ],
   );
 }

@@ -7,4 +7,5 @@ abstract class AssetsData {
   static const homeSliderCover = 'assets/images/home_slider_cover.png';
   static const reviewsHomeImg = 'assets/images/reviews_img.png';
   static const categoryHomeImg = 'assets/images/category_home_img.png';
+  static const alertDialogImg = 'assets/images/alert_dialog_img.png';
 }

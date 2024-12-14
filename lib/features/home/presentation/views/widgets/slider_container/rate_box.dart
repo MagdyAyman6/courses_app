@@ -16,7 +16,7 @@ class RateBox extends StatelessWidget {
         children: [
           Text(
             "Full Stack Course",
-            style: Styles.textStyle20.copyWith(fontSize: 20.sp),
+            style: Styles.textStyle20.copyWith(fontSize: 20.sp,color: AppColor.kWhiteColor),
           ),
           Container(
             width: 51.w,
