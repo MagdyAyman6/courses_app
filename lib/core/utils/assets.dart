@@ -1,5 +1,6 @@
 abstract class AssetsData {
   static const splash = "assets/images/splash_logo.png";
+  static const logo = 'assets/images/logo.png';
   static const splashImage = "assets/images/splash_image.png";
   static const onBoarding1 = 'assets/images/on_boarding_1_logo.png';
   static const onBoarding2 = 'assets/images/on_boarding_2_logo.png';
@@ -8,4 +9,5 @@ abstract class AssetsData {
   static const reviewsHomeImg = 'assets/images/reviews_img.png';
   static const categoryHomeImg = 'assets/images/category_home_img.png';
   static const alertDialogImg = 'assets/images/alert_dialog_img.png';
+  static const courseNavIcon = 'assets/images/course_nav_icon.png';
 }

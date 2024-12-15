@@ -1,19 +1,29 @@
 import 'package:flutter/material.dart';
 
-class SliderHeadIcons extends StatelessWidget {
+class SliderHeadIcons extends StatefulWidget {
   const SliderHeadIcons({super.key});
 
   @override
+  State<SliderHeadIcons> createState() => _SliderHeadIconsState();
+}
+
+class _SliderHeadIconsState extends State<SliderHeadIcons> {
+  @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Icon(
-          Icons.notes_outlined,
-          size: 24,
-          color: Colors.white,
+        InkWell(
+          onTap: () {
+            Scaffold.of(context).openDrawer();
+          },
+          child: const Icon(
+            Icons.notes_outlined,
+            size: 24,
+            color: Colors.white,
+          ),
         ),
-        Icon(
+        const Icon(
           Icons.notifications_rounded,
           size: 24,
           color: Colors.white,

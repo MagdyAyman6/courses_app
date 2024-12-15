@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
-
 import '../../../../../core/utils/app_color.dart';
 
 import '../../../../core/utils/app_router.dart';
@@ -39,8 +38,11 @@ class LoginForm extends StatelessWidget {
               style: Styles.textStyle14,
             ),
             10.verticalSpace,
-             const CustomTextFormField(
-              prefixIcon: Icon(Icons.lock,color: AppColor.kHintColor,),
+            const CustomTextFormField(
+              prefixIcon: Icon(
+                Icons.lock,
+                color: AppColor.kHintColor,
+              ),
               hint: 'Enter your Password',
             ),
             10.verticalSpace,

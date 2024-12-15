@@ -39,7 +39,7 @@ dependencies:
   sleek_circular_slider: ^2.0.1
   intl: ^0.20.0
   easy_stepper: ^0.8.5+1
-  curved_navigation_bar: ^1.0.6
+  persistent_bottom_nav_bar: ^6.2.1
   font_awesome_flutter: ^10.8.0
   url_launcher: ^6.3.1
   smooth_page_indicator: ^1.2.0+3

@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../features/auth/presentation/log_in_view.dart';
-import '../../features/home/presentation/views/widgets/my_home_page_view_body.dart';
+import '../../features/home/presentation/views/my_home_page_view.dart';
 import '../../features/splash/presentation/on_boarding_view.dart';
 import '../../features/splash/presentation/splash_view.dart';
 
@@ -52,7 +52,7 @@ abstract class AppRouter {
       GoRoute(
         path: kMyHomeView,
         builder: (BuildContext context, GoRouterState state) {
-          return MyHomePageViewBody();
+          return const MyHomePageView();
         },
       ),
       GoRoute(
