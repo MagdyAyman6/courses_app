@@ -10,4 +10,9 @@ abstract class AssetsData {
   static const categoryHomeImg = 'assets/images/category_home_img.png';
   static const alertDialogImg = 'assets/images/alert_dialog_img.png';
   static const courseNavIcon = 'assets/images/course_nav_icon.png';
+  static const fullStackImg = 'assets/images/full_stack_card_img.png';
+  static const courseCover = 'assets/images/course_cover.png';
+  static const fullStackCover = 'assets/images/fullstack_cover.png';
+  static const bookingRoomImg = 'assets/images/book_room_img.jpeg';
+  static const bookingWatchImg = 'assets/images/booking_watch_img.png';
 }

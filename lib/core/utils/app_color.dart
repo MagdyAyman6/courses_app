@@ -34,5 +34,7 @@ abstract class AppColor {
   static const kBlackColor = Color(0xff101623);
   static const kSelectedIconColor = Color(0xff20473E);
   static const kUnselectedIconColor = Color(0xff5E5F60);
-  static const kTealColor = Colors.teal;
+  static const kScaffoldBookingColor = Color(0xffF0F0F0);
+  static const kAppBarTitleColor = Color(0xff111111);
+  static const kGreyTabBarColor = Color(0xffE7E3E3);
 }

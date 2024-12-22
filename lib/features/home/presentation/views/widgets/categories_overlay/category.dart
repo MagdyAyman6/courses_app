@@ -20,11 +20,12 @@ class Category extends StatelessWidget {
           child: Text(
             "Categories",
             style: Styles.textStyle20.copyWith(
-                fontWeight: FontWeight.w400, color: AppColor.kCategoryHomeColor),
+                fontWeight: FontWeight.w400,
+                color: AppColor.kCategoryHomeColor),
           ),
         ),
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: 25.w,vertical: 12.h),
+          padding: EdgeInsets.symmetric(horizontal: 25.w, vertical: 12.h),
           child: SizedBox(
             // height: ,
             // width: ,

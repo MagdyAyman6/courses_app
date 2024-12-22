@@ -1,6 +1,8 @@
 import 'package:course_app/features/auth/presentation/forget_pass_view.dart';
 import 'package:course_app/features/auth/presentation/sign_up_view.dart';
 import 'package:course_app/features/auth/presentation/verify_code_view.dart';
+import 'package:course_app/features/home/presentation/views/booking_history_view.dart';
+import 'package:course_app/features/home/presentation/views/course_view_details.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -16,6 +18,8 @@ abstract class AppRouter {
   static const kVerifyCodeView = '/VerifyCodeView';
   static const kMyHomeView = '/MyHomeView';
   static const kMyLogin = '/login';
+  static const kCourseDetails = '/CourseDetail';
+  static const kBookingHistory = '/BookingView';
 
   static final GoRouter router = GoRouter(
     routes: <RouteBase>[
@@ -58,6 +62,14 @@ abstract class AppRouter {
       GoRoute(
         path: '/login',
         builder: (context, state) => const LogInView(),
+      ),
+      GoRoute(
+        path: kCourseDetails,
+        builder: (context, state) => const CourseViewDetails(),
+      ),
+      GoRoute(
+        path: kBookingHistory,
+        builder: (context, state) => const BookingHistoryView(),
       ),
     ],
   );

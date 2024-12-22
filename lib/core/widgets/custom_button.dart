@@ -36,8 +36,6 @@
 //   }
 // }
 
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -45,25 +43,29 @@ import '../utils/app_color.dart';
 import '../utils/styles.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton(
-      {super.key,
-        required this.onTap,
-        required this.text, required TextStyle style,
-      });
+  const CustomButton({
+    super.key,
+    required this.onTap,
+    required this.text,
+    required TextStyle style,
+  });
+
   final String text;
   final VoidCallback onTap;
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
-      child: Container(
-        width: double.infinity,
-        height: 55,
-        decoration: BoxDecoration(
-          color: AppColor.kButtonColor,
-          borderRadius: BorderRadius.circular(10.r),
-        ),
-        child: Center(
+      child: Center(
+        child: Container(
+          alignment: Alignment.center,
+          width: double.infinity,
+          height: 55.h,
+          decoration: BoxDecoration(
+            color: AppColor.kButtonColor,
+            borderRadius: BorderRadius.circular(10.r),
+          ),
           child: Text(
             text,
             style: Styles.textStyle14.copyWith(

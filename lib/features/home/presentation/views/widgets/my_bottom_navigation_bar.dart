@@ -1,9 +1,12 @@
 import 'package:course_app/core/utils/app_color.dart';
 import 'package:course_app/core/utils/assets.dart';
+import 'package:course_app/features/home/presentation/views/widgets/booking/booking_view_body.dart';
 import 'package:course_app/features/home/presentation/views/widgets/my_home_page_view_body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
+
+import 'course_view_widgets/course_view_body.dart';
 
 class MyBottomNavigationBar extends StatefulWidget {
   const MyBottomNavigationBar({super.key});
@@ -20,9 +23,8 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
   List<Widget> _buildScreens() {
     return [
       const MyHomePageViewBody(),
-      const Center(child: Text("Book Screen", style: TextStyle(fontSize: 20))),
-      const Center(
-          child: Text("Course Screen", style: TextStyle(fontSize: 20))),
+      const BookingViewBody(),
+      const CourseViewBody(),
       const Center(
           child: Text("Offers Screen", style: TextStyle(fontSize: 20))),
       const Center(child: Text("More Screen", style: TextStyle(fontSize: 20))),
@@ -47,10 +49,11 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
         inactiveColorPrimary: AppColor.kUnselectedIconColor,
       ),
       PersistentBottomNavBarItem(
-        iconSize: 50,
         activeColorPrimary: AppColor.kSelectedIconColor.withOpacity(0.59),
         inactiveColorPrimary: AppColor.kUnselectedIconColor,
         icon: Image.asset(
+          // height: 25.h,
+          // width: 25.w,
           AssetsData.courseNavIcon,
         ),
       ),
@@ -77,12 +80,12 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
   Widget build(BuildContext context) {
     return PersistentTabView(
       padding: EdgeInsets.only(bottom: 8.h, top: 5.h),
-      navBarHeight: 64.h,
+      // navBarHeight: 64.h,
       context,
       controller: _controller,
       screens: _buildScreens(),
       items: _navBarsItems(),
-      confineToSafeArea: true,
+      // confineToSafeArea: true,
       backgroundColor: Colors.white,
       // Default color for navigation bar
       navBarStyle: NavBarStyle.style15,

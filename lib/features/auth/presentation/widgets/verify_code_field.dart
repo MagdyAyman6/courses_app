@@ -11,7 +11,7 @@ class VerifyCodeField extends StatelessWidget {
     const defaultPinTheme = PinTheme(
       width: 56,
       height: 56,
-      textStyle: TextStyle(fontSize: 22, color: AppColor.kTealColor),
+      textStyle: TextStyle(fontSize: 22, color: AppColor.kRateContainerColor),
       decoration: BoxDecoration(
         color: AppColor.kWhiteColor,
       ),
@@ -38,7 +38,7 @@ class VerifyCodeField extends StatelessWidget {
               margin: const EdgeInsets.only(bottom: 9),
               width: 22,
               height: 1,
-              color: AppColor.kTealColor,
+              color: AppColor.kRateContainerColor,
             ),
           ],
         ),
@@ -46,14 +46,14 @@ class VerifyCodeField extends StatelessWidget {
           decoration: const BoxDecoration(
             // borderRadius: BorderRadius.circular(8),
             border: Border(
-              bottom: BorderSide(color: AppColor.kTealColor),
+              bottom: BorderSide(color: AppColor.kRateContainerColor),
             ),
           ),
         ),
         focusedPinTheme: defaultPinTheme.copyWith(
           decoration: defaultPinTheme.decoration!.copyWith(
             // borderRadius: BorderRadius.circular(8),
-            border: Border.all(color: AppColor.kTealColor),
+            border: Border.all(color: AppColor.kRateContainerColor),
           ),
         ),
       ),

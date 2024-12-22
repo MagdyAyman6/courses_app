@@ -1,3 +1,4 @@
+import 'package:course_app/core/widgets/rating_box.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -16,7 +17,8 @@ class RateBox extends StatelessWidget {
         children: [
           Text(
             "Full Stack Course",
-            style: Styles.textStyle20.copyWith(fontSize: 20.sp,color: AppColor.kWhiteColor),
+            style: Styles.textStyle20
+                .copyWith(fontSize: 20.sp, color: AppColor.kWhiteColor),
           ),
           Container(
             width: 51.w,
@@ -25,22 +27,7 @@ class RateBox extends StatelessWidget {
               color: AppColor.kRateContainerColor.withOpacity(0.5),
               borderRadius: BorderRadius.circular(12.r),
             ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                const Icon(
-                  Icons.star_rate_rounded,
-                  size: 13,
-                  color: AppColor.kRateIcon,
-                ),
-                Text(
-                  "4.7",
-                  style: Styles.textStyle12.copyWith(
-                    color: Colors.white,
-                  ),
-                ),
-              ],
-            ),
+            child: const RatingBox(),
           ),
         ],
       ),
