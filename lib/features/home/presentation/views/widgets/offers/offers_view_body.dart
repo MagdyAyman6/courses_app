@@ -20,7 +20,7 @@ class OffersViewBody extends StatelessWidget {
           ),
           child: const OffersAppBar(),
         ),
-        const OffersItem(),
+        OfferCard(),
       ],
     );
   }
