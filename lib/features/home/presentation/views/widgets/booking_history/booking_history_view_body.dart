@@ -12,17 +12,19 @@ class BookingHistoryViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Padding(
-          padding: EdgeInsets.only(
-              left: 15.w, right: 20.w, top: 50.h, bottom: 24.h),
-          child: const BookingHistoryAppBar(),
-        ),
-        const TabBarTitle(),
-        10.verticalSpace,
-        // BookingPastBody(),
-      ],
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          Padding(
+            padding: EdgeInsets.only(
+                left: 15.w, right: 20.w, top: 50.h, bottom: 24.h),
+            child: const BookingHistoryAppBar(),
+          ),
+          const TabBarTitle(),
+          10.verticalSpace,
+          // BookingPastBody(),
+        ],
+      ),
     );
   }
 }

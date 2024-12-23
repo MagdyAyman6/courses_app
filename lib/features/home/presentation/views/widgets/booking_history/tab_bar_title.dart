@@ -96,8 +96,8 @@ class _TabBarTitleState extends State<TabBarTitle> {
         // Content changes based on selection
         Center(
           child: isUpcoming == false
-              ? const BookingPastBody()
-              : const BookingUpcomingBody(),
+              ? const BookingUpcomingBody()
+              : const BookingPastBody(),
         ),
       ],
     );
