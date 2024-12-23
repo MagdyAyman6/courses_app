@@ -7,6 +7,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 
 import 'course_view_widgets/course_view_body.dart';
+import 'offers/offers_view_body.dart';
 
 class MyBottomNavigationBar extends StatefulWidget {
   const MyBottomNavigationBar({super.key});
@@ -25,8 +26,7 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
       const MyHomePageViewBody(),
       const BookingViewBody(),
       const CourseViewBody(),
-      const Center(
-          child: Text("Offers Screen", style: TextStyle(fontSize: 20))),
+      const OffersViewBody(),
       const Center(child: Text("More Screen", style: TextStyle(fontSize: 20))),
     ];
   }

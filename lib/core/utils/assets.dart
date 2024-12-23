@@ -15,4 +15,5 @@ abstract class AssetsData {
   static const fullStackCover = 'assets/images/fullstack_cover.png';
   static const bookingRoomImg = 'assets/images/book_room_img.jpeg';
   static const bookingWatchImg = 'assets/images/booking_watch_img.png';
+  static const offersItemImg = 'assets/images/offers_item_img.png';
 }
