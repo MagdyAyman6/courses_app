@@ -12,10 +12,8 @@ class OffersAppBar extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         GestureDetector(
-          onTap: () {
-            Navigator.of(context).pop();
-          },
-          child: const ArrowBackIcon(),
+          onTap: () {},
+          child: const Icon(Icons.notifications_active_outlined),
         ),
         const Text(
           "Offers",

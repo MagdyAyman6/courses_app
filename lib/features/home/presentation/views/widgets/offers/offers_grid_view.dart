@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'offers_item.dart';
+import 'offers_card.dart';
 
 class OffersGridView extends StatelessWidget {
   const OffersGridView({super.key});

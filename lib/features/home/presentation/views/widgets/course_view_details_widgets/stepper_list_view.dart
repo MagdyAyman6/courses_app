@@ -2,15 +2,9 @@ import 'package:course_app/features/home/presentation/views/widgets/course_view_
 import 'package:flutter/material.dart';
 
 class StepperListView extends StatelessWidget {
-  StepperListView({super.key});
+  const StepperListView({super.key, required this.steps});
 
-  final List<String> steps = [
-    "HTML and HTML5",
-    "CSS and CSS3",
-    "JavaScript Fundamentals",
-    "Responsive Web Design",
-    "Advanced Front-end Frameworks"
-  ];
+  final List<String> steps;
 
   @override
   Widget build(BuildContext context) {

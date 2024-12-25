@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../features/auth/presentation/log_in_view.dart';
+import '../../features/home/presentation/views/events_details_view.dart';
 import '../../features/home/presentation/views/my_home_page_view.dart';
 import '../../features/splash/presentation/on_boarding_view.dart';
 import '../../features/splash/presentation/splash_view.dart';
@@ -20,6 +21,7 @@ abstract class AppRouter {
   static const kMyLogin = '/login';
   static const kCourseDetails = '/CourseDetail';
   static const kBookingHistory = '/BookingView';
+  static const kEventsDetails = '/EventsDetailsView';
 
   static final GoRouter router = GoRouter(
     routes: <RouteBase>[
@@ -70,6 +72,10 @@ abstract class AppRouter {
       GoRoute(
         path: kBookingHistory,
         builder: (context, state) => const BookingHistoryView(),
+      ),
+      GoRoute(
+        path: kEventsDetails,
+        builder: (context, state) => const EventsDetailsView(),
       ),
     ],
   );

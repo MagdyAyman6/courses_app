@@ -27,8 +27,6 @@ class Category extends StatelessWidget {
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 25.w, vertical: 12.h),
           child: SizedBox(
-            // height: ,
-            // width: ,
             child: Image.asset(AssetsData.categoryHomeImg),
           ),
         ),

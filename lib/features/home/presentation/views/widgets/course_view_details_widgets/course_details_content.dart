@@ -62,7 +62,15 @@ class CourseDetailsContent extends StatelessWidget {
                   color: const Color(0xff20473E),
                 ),
               ),
-              StepperListView(),
+              const StepperListView(
+                steps: [
+                  "HTML and HTML5",
+                  "CSS and CSS3",
+                  "JavaScript Fundamentals",
+                  "Responsive Web Design",
+                  "Advanced Front-end Frameworks"
+                ],
+              ),
               25.verticalSpace,
               Column(
                 children: [

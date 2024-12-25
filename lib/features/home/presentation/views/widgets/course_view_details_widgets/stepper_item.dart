@@ -37,14 +37,15 @@ class StepperItem extends StatelessWidget {
               ),
           ],
         ),
-        SizedBox(width: 16.w), // Spacing
+        SizedBox(width: 16.w),
         Expanded(
           child: Padding(
             padding: EdgeInsets.only(bottom: 12.h),
             child: Text(
               title,
-              style:
-                  Styles.textStyle14.copyWith(color: const Color(0xff585858)),
+              style: Styles.textStyle14.copyWith(
+                color: const Color(0xff585858),
+              ),
             ),
           ),
         ),
