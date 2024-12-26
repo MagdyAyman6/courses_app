@@ -3,13 +3,13 @@ import 'package:course_app/core/utils/assets.dart';
 import 'package:course_app/features/home/presentation/views/widgets/booking/booking_view_body.dart';
 import 'package:course_app/features/home/presentation/views/widgets/events/event_card.dart';
 import 'package:course_app/features/home/presentation/views/widgets/events/events_view_body.dart';
-import 'package:course_app/features/home/presentation/views/widgets/my_home_page_view_body.dart';
+import 'package:course_app/features/home/presentation/views/widgets/home_view/my_home_page_view_body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 
-import 'course_view_widgets/course_view_body.dart';
-import 'offers/offers_view_body.dart';
+import '../course_view_widgets/course_view_body.dart';
+import '../offers/offers_view_body.dart';
 
 class MyBottomNavigationBar extends StatefulWidget {
   const MyBottomNavigationBar({super.key});

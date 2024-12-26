@@ -25,13 +25,13 @@ class StepperItem extends StatelessWidget {
               width: 12.w,
               height: 12.w,
               decoration: const BoxDecoration(
-                color: Colors.teal,
+                color: AppColor.kIconsColor,
                 shape: BoxShape.circle,
               ),
             ),
             if (!isLast)
               Container(
-                width: 2.w,
+                width: 1.w,
                 height: 40.h, // Vertical Line
                 color: AppColor.kRateContainerColor,
               ),

@@ -2,9 +2,8 @@ import 'package:course_app/features/home/presentation/views/widgets/listview_rev
 import 'package:course_app/features/home/presentation/views/widgets/slider_container/slider_container.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import '../my_home_page_view.dart';
-import 'categories_overlay/category.dart';
+import '../categories_overlay/category.dart';
+import 'home_drawer.dart';
 
 class MyHomePageViewBody extends StatefulWidget {
   const MyHomePageViewBody({super.key});
