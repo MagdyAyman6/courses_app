@@ -1,16 +1,35 @@
-# course_app
+# Courses App
 
-A new Flutter project.
+A modern and user-friendly Flutter application that allows users to browse, reserve, and schedule lectures for various courses.  
 
-## Getting Started
+## Features:
+- User authencation
+-  Browse available courses  
+-  Reserve and schedule lecture dates  
+-  Receive notifications for upcoming lectures  
+-  Secure online payments for premium courses  
+-  Track your learning progress  
 
-This project is a starting point for a Flutter application.
+## Tech Stack:
+- Flutter - Frontend
+- Dart - Programming Language
+- MVVM - Architecture pattern used for organizing the app
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshots:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Installation:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/MagdyAyman6/courses_app.git
+2. Navigate to the project directory:
+   ```sh
+   cd courses_app
+3. Install dependencies:
+   ```sh
+   flutter pub get
+4. Run the app:
+   ```sh
+   flutter run
+## Contact:
+- Email: eng.magdyayman@gmail.com
